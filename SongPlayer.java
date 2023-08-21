@@ -7,7 +7,7 @@ import java.util.HashMap;
 import java.util.Scanner;
 
 // This class manages songs of users
-public class SongPlayer {
+public class FinalList2 {
 
 	public static void main(String[] args) {
 		// This map stores song lists of each user
@@ -61,7 +61,7 @@ public class SongPlayer {
 				}
 
 
-
+				// This is list of valid songs inputs
 				ArrayList<String> tlist = new ArrayList<String>();
 				tlist.add("S1");
 				tlist.add("S2");
@@ -71,7 +71,7 @@ public class SongPlayer {
 				tlist.add("S6");
 
 				String t = null;
-
+				// Loop to get valid songs
 				for(int j=0;j<=j+1;j++) {
 
 					// Asks for user input for a song and adds it to the Deque.
@@ -86,7 +86,7 @@ public class SongPlayer {
 					continue;
 				}
 
-
+				//This loop to avoid same songs repeat
 				if (!S1.contains(t)) {
 					S1.add(t);
 					System.out.println( username+"'s songs: " + S1);
